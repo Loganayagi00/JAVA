@@ -1,38 +1,187 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f4f4f4;
-}
-
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #ff6347; 
+    color: white;
+    padding: 20px 0;
     text-align: center;
-}
+  }
+  
+  header .logo h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+  }
+  
 
-input {
-    width: 100%;
+  .hero {
+    background-color: #ff6347;
+    color: white;
+    padding: 50px 10px;
+    text-align: center;
+  }
+  
+
+  .about {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+
+  .menu {
+    padding: 30px 10px;
+    background-color: white;
+  }
+  
+  .menu h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .menu-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.8rem;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6347;
+    margin-top: 10px;
+  }
+  
+
+  .query-form {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .query-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .query-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+  }
+  
+  .query-form input, .query-form textarea {
+    width: 80%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    margin-bottom: 20px;
     border-radius: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: blue;
+    border: 1px solid #ddd;
+  }
+  
+  .query-form button {
+    padding: 10px 20px;
+    background-color: #ff6347;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+  }
+  
+  .query-form button:hover {
+    background-color: #e5533c;
+  }
+  
 
-button:hover {
-    background: darkblue;
-}
+  @media (max-width: 768px) {
+    header .logo h1 {
+      font-size: 1.5rem;
+    }
+  
+    .menu-item {
+      text-align: left;
+      margin: 15px auto;
+    }
+  
+    .menu-item h3 {
+      font-size: 1.6rem;
+    }
+  
+    .price {
+      font-size: 1.3rem;
+    }
+  
+    .query-form input, .query-form textarea {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu h2 {
+      font-size: 1.5rem;
+    }
+  
+    .price {
+      font-size: 1.2rem;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  

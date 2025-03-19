@@ -1,0 +1,8 @@
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.input-field, .submit-btn {
+    margin-top: 10px;
+}
